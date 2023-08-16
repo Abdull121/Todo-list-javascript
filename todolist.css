@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(237, 210, 170);
+}
+
+.container {
+  background-image: url(images/hash-backgroudn.png);
+  background-size: 180px;
+  background-repeat: repeat;
+  background-color: rgb(253, 244, 230);
+  margin: auto;
+  width: 700px;
+  border: 4px solid #a32525;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px 0px;
+}
+
+h1 {
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 25px auto;
+  width: 50%;
+  color: #a32525;
+}
+.input-field {
+  margin-top: 70px;
+}
+
+#error {
+  float: left;
+  margin: 10px 50px;
+  color: red;
+}
+
+input[type="text"] {
+  padding: 12px 10px;
+  width: 60%;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #a32525;
+  color: #a32525;
+  font-weight: bold;
+}
+
+#btn {
+  padding: 12px 80px;
+  border-radius: 8px;
+  background-color: #a32525;
+  color: #ffffff;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+#line {
+  display: block;
+  margin-top: 60px;
+  border-top: 2px solid #a32525;
+  border-width: 100%;
+}
+
+#box {
+  display: flex;
+  flex-wrap: wrap;
+
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* border: 2px solid; */
+}
+ul li {
+  width: 60%;
+  text-align: center;
+  list-style: none;
+  background-color: rgb(253, 187, 89);
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  overflow: hidden;
+  color: #a32525;
+}
+
+i {
+  float: right;
+  margin-top: 30px;
+  margin-left: 10px;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 15px 50px;
+  background-color: #a32525;
+  border: 2px solid black;
+}
+i:hover {
+  cursor: pointer;
+}
+.active {
+  text-decoration-line: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgb(119, 15, 15);
+  font-weight: bolder;
+}
+
+#check {
+  position: relative;
+  right: 300px;
+  top: 65px;
+  height: 25px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 100%;
+  border: 3px solid rgb(255, 153, 0);
+  border-radius: 5px;
+  outline: none;
+
+  accent-color: green;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #btn {
+    margin: 35px 0px;
+  }
+
+  #error {
+    position: absolute;
+    font-size: 12px;
+    top: 205px;
+    left: 50px;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    padding: 10px 8px;
+  }
+  i {
+    margin: 20px 30px;
+    padding: 12px 80px;
+  }
+
+  ul li {
+    margin-top: 0px;
+    width: 100%;
+  }
+  input[type="text"],
+  h1 {
+    width: 100%;
+  }
+
+  #error {
+    top: 200px;
+    left: 0px;
+  }
+}
